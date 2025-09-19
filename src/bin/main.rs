@@ -9,7 +9,7 @@
 use esp_hal::clock::CpuClock;
 use esp_hal::main;
 use esp_hal::time::{Duration, Instant};
-use esp_hal::uart::{Config, Uart};
+use esp_hal::uart::{Config, Uart, DataBits, StopBits, Parity};
 use esp_hal::gpio::{Level, Output, OutputConfig};
 
 #[panic_handler]
@@ -31,9 +31,9 @@ fn main() -> ! {
     // Configure UART2 for HC-06 communication
     let uart_config = Config::default()
         .with_baudrate(9600)
-        .with_data_bits(esp_hal::uart::DataBits::_8)
-        .with_parity(esp_hal::uart::Parity::None)
-        .with_stop_bits(esp_hal::uart::StopBits::_1);
+        .with_data_bits(DataBits::_8)
+        .with_parity(Parity::None)
+        .with_stop_bits(StopBits::_1);
 
     let mut uart2 = Uart::new(peripherals.UART2, uart_config)
         .expect("Failed to initialize UART2")

@@ -1,7 +1,7 @@
 ### Overview
-This is a `no_std` Rust program for an ESP microcontroller (likely an ESP32 or similar). It:
+This is a `no_std` Rust program for ESP wroom32. It:
 1. Configures the microcontroller to run at maximum CPU clock speed.
-2. Sets up a GPIO pin (GPIO2) to control an LED.
+2. Sets up a GPIO pin (GPIO2) to control built in LED.
 3. Configures UART2 for communication with an HC-06 Bluetooth module.
 4. Sends configuration commands to the HC-06 and repeatedly sends a "Hello Muchangi" message while toggling the LED every 2 seconds.
 

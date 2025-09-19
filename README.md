@@ -1,5 +1,5 @@
 ### Overview
-This is a `no_std` Rust program for ESP wroom32. It:
+This is a `no_std` Rust firmware for ESP wroom32. It:
 1. Configures the microcontroller to run at maximum CPU clock speed.
 2. Sets up a GPIO pin (GPIO2) to control built in LED.
 3. Configures UART2 for communication with an HC-06 Bluetooth module.

@@ -1,5 +1,3 @@
-Let me break down this Rust code for an ESP (wroom32) microcontroller using the `esp_hal` hardware abstraction layer. I'll explain it clearly and concisely, focusing on what the code does, its structure, and its purpose.
-
 ### Overview
 This is a `no_std` Rust program for an ESP microcontroller (likely an ESP32 or similar). It:
 1. Configures the microcontroller to run at maximum CPU clock speed.

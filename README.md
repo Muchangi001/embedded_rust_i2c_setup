@@ -18,7 +18,7 @@ A robust no_std Rust driver for HD44780-based LCD displays with PCF8574 I2C back
 - Connections:
   - SDA: GPIO21
   - SCL: GPIO22
-  - Status LED: GPIO2
+  - Status LED: GPIO2 (onboard)
 
 ## Usage
 
